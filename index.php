@@ -1,6 +1,7 @@
 <?php
 echo 'Hello world';
 require 'vendor/autoload.php';
+echo 'Echo after require vendor';
 require 'config.php';
 include('image_check.php');
 
