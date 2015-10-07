@@ -11,7 +11,8 @@ use Aws\S3\S3Client;
 $client = DynamoDbClient::factory($config);
 $s3 = S3Client::factory($config);
 
-echo $_SERVER;
+$comma_separated = implode(",", $_SERVER);
+echo $comma_separated; // lastname,email,phone
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
     {
