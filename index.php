@@ -14,9 +14,10 @@ use Aws\DynamoDb\Enum\KeyType;
 use Aws\S3\S3Client;
 
 
+echo 'Echo before use vendor artifacts';
 $client = DynamoDbClient::factory($config);
 $s3 = S3Client::factory($config);
-
+echo 'Echo after use vendor artifacts';
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
     {
