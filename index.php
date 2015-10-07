@@ -132,4 +132,6 @@ echo "Consumed capacity: " . $response["ConsumedCapacity"]["CapacityUnits"] . PH
     </div>
     <!-- /#wrapper -->
 
+    <?php echo 'Echo at finish of index.php script'?>
+
     <?php include('includes/footer.php') ?>
