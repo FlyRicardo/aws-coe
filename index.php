@@ -68,8 +68,6 @@ echo "Consumed capacity: " . $response["ConsumedCapacity"]["CapacityUnits"] . PH
 echo 'Echo after finish the configuration index.php block';
 ?>
 
-<?php echo 'Echo at begin of form' ?>
-
      <?php include('includes/header.php') ?>
 
         <div id="page-wrapper">
