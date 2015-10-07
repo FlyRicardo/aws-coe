@@ -1,4 +1,5 @@
 <?php
+echo 'Hello world';
 require 'vendor/autoload.php';
 require 'config.php';
 include('image_check.php');
