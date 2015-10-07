@@ -61,12 +61,13 @@ echo "Consumed capacity: " . $response["ConsumedCapacity"]["CapacityUnits"] . PH
                                 );
      header('Location: login.php');                    
 
-    } 
-    
-     
-    
+    }
+
+
+echo 'Echo after finish the configuration index.php block';
 ?>
 
+<?php echo 'Echo at begin of form' ?>
 
      <?php include('includes/header.php') ?>
 
