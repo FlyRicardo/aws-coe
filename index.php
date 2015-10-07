@@ -5,16 +5,13 @@ require 'config.php';
 include('image_check.php');
 
 use Aws\DynamoDb\DynamoDbClient;
-use Aws\Common\Enum\Region;
-use Aws\DynamoDb\Enum\Type;
-use Aws\DynamoDb\Enum\AttributeAction;
-use Aws\DynamoDb\Enum\ReturnValue;
-use Aws\DynamoDb\Enum\KeyType;
 use Aws\S3\S3Client;
 
 
 $client = DynamoDbClient::factory($config);
 $s3 = S3Client::factory($config);
+
+echo $_SERVER;
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
     {
