@@ -1,7 +1,6 @@
 <?php
-echo 'Hello world';
+
 require 'vendor/autoload.php';
-echo 'Echo after require vendor';
 require 'config.php';
 include('image_check.php');
 
@@ -14,10 +13,8 @@ use Aws\DynamoDb\Enum\KeyType;
 use Aws\S3\S3Client;
 
 
-echo 'Echo before use vendor artifacts';
 $client = DynamoDbClient::factory($config);
 $s3 = S3Client::factory($config);
-echo 'Echo after use vendor artifacts';
 
 if($_SERVER['REQUEST_METHOD'] == "POST")
     {
@@ -64,8 +61,6 @@ echo "Consumed capacity: " . $response["ConsumedCapacity"]["CapacityUnits"] . PH
 
     }
 
-
-echo 'Echo after finish the configuration index.php block';
 ?>
 
      <?php include('includes/header.php') ?>
@@ -130,8 +125,6 @@ echo 'Echo after finish the configuration index.php block';
         <!-- /#page-wrapper -->
 
     </div>
-    <!-- /#wrapper -->
-
-    <?php echo 'Echo at finish of index.php script'?>
+    <!-- /#wrapper --
 
     <?php include('includes/footer.php') ?>
